@@ -68,7 +68,7 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => App\User::class,
+            'model' => \Ocelot\Core\User::class,
         ],
 
         // 'users' => [
@@ -95,7 +95,7 @@ return [
     'passwords' => [
         'users' => [
             'provider' => 'users',
-            'table' => 'password_resets',
+            'table' => 'cr_password_reset',
             'expire' => 60,
             'throttle' => 60,
         ],
