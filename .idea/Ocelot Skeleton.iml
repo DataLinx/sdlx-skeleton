@@ -99,5 +99,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="Ocelot Core" />
+    <orderEntry type="module" module-name="jira" />
   </component>
 </module>

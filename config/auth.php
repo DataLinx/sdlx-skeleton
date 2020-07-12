@@ -68,7 +68,7 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => \Ocelot\Core\User::class,
+            'model' => \Ocelot\Core\Models\User::class,
         ],
 
         // 'users' => [
