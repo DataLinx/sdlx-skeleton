@@ -170,9 +170,9 @@ return [
          * Application Service Providers...
          */
         App\Providers\AppServiceProvider::class,
-        App\Providers\AuthServiceProvider::class,
-        // App\Providers\BroadcastServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
+        Ocelot\Core\Providers\AuthServiceProvider::class,
+        // Ocelot\Core\Providers\BroadcastServiceProvider::class,
+        Ocelot\Core\Providers\EventServiceProvider::class,
         App\Providers\TelescopeServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
