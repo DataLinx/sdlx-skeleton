@@ -173,8 +173,8 @@ return [
         Ocelot\Core\Providers\AuthServiceProvider::class,
         // Ocelot\Core\Providers\BroadcastServiceProvider::class,
         Ocelot\Core\Providers\EventServiceProvider::class,
-        App\Providers\TelescopeServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        App\Providers\TelescopeServiceProvider::class,
 
     ],
 
