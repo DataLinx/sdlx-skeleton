@@ -63,5 +63,11 @@
         "post-update-cmd": [
             "@php artisan ocelot:post-composer-update"
         ]
-    }
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "/shared/httpd/packages/ocelot/core"
+        }
+    ]
 }
