@@ -2,10 +2,9 @@
 
 namespace Tests\Feature;
 
-use Illuminate\Foundation\Testing\RefreshDatabase;
-use Tests\TestCase;
+use Ocelot\Core\Testing\AppTestCase;
 
-class ExampleTest extends TestCase
+class ExampleTest extends AppTestCase
 {
     /**
      * A basic test example.
