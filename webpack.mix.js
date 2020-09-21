@@ -11,5 +11,15 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
-    .sass('resources/sass/app.scss', 'public/css');
+mix .js([
+        'resources/js/app.js',
+        'vendor/ocelot/core/resources/js/core.js',
+    ], 'public/js')
+    .extract()
+    .sass('resources/sass/app.scss', 'public/css')
+    .sass('vendor/ocelot/core/resources/sass/core.scss', 'public/css')
+    .browserSync(process.env.APP_URL)
+
+if (mix.inProduction()) {
+    mix.version()
+}
