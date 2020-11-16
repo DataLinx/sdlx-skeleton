@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../packages/ocelot/core/.idea/Ocelot Core.iml" filepath="$PROJECT_DIR$/../packages/ocelot/core/.idea/Ocelot Core.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Ocelot Skeleton.iml" filepath="$PROJECT_DIR$/.idea/Ocelot Skeleton.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../packages/ocelot/frontend/.idea/frontend.iml" filepath="$PROJECT_DIR$/../packages/ocelot/frontend/.idea/frontend.iml" />
       <module fileurl="file://$PROJECT_DIR$/../packages/datalinx/gettext-context/.idea/gettext-context.iml" filepath="$PROJECT_DIR$/../packages/datalinx/gettext-context/.idea/gettext-context.iml" />
       <module fileurl="file://$PROJECT_DIR$/../packages/ocelot/jira/.idea/jira.iml" filepath="$PROJECT_DIR$/../packages/ocelot/jira/.idea/jira.iml" />
     </modules>

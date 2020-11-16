@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ff03573f14092999c16ec04bddbec07f",
+    "content-hash": "9282cfe9f4122f15945465abb06a6bec",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1983,6 +1983,60 @@
                 }
             },
             "description": "Ocelot core package",
+            "transport-options": {
+                "relative": false
+            }
+        },
+        {
+            "name": "ocelot/frontend",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "/shared/httpd/packages/ocelot/frontend",
+                "reference": "86ffd1e5003c2b0918072dc725b2e7990d7e9469"
+            },
+            "require": {
+                "ocelot/core": "dev-master"
+            },
+            "require-dev": {
+                "facade/ignition": "^2.5",
+                "fzaninotto/faker": "^1.9",
+                "mockery/mockery": "^1.4",
+                "nunomaduro/collision": "^5.1",
+                "orchestra/testbench": "^6.4",
+                "phpunit/phpunit": "^9.4"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "dont-discover": [],
+                    "providers": [
+                        "Ocelot\\Frontend\\Providers\\FrontendServiceProvider"
+                    ]
+                },
+                "ocelot": {
+                    "type": "app"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Ocelot\\Frontend\\": "src/",
+                    "Ocelot\\Frontend\\Database\\Factories\\": "database/factories/",
+                    "Ocelot\\Frontend\\Database\\Seeders\\": "database/seeders/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Ocelot\\Frontend\\Tests\\": "tests/"
+                }
+            },
+            "authors": [
+                {
+                    "name": "DataLinx",
+                    "email": "info@datalinx.si"
+                }
+            ],
+            "description": "Ocelot frontend app package",
             "transport-options": {
                 "relative": false
             }
@@ -7294,7 +7348,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "ocelot/core": 20
+        "ocelot/core": 20,
+        "ocelot/frontend": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

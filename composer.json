@@ -9,7 +9,8 @@
     "require": {
         "ext-gettext": "*",
         "ext-json": "*",
-        "ocelot/core": "dev-master"
+        "ocelot/core": "dev-master",
+        "ocelot/frontend": "dev-master"
     },
     "require-dev": {
         "facade/ignition": "^2.3.6",
@@ -61,6 +62,10 @@
         {
             "type": "path",
             "url": "/shared/httpd/packages/ocelot/core"
+        },
+        {
+            "type": "path",
+            "url": "/shared/httpd/packages/ocelot/frontend"
         }
     ]
 }
