@@ -6,28 +6,27 @@
         "ocelot",
         "laravel"
     ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "DataLinx",
+            "email": "info@datalinx.si"
+        }
+    ],
     "require": {
+        "php": "^8.0.2",
         "ext-gettext": "*",
         "ext-json": "*",
         "ocelot/core": "dev-master",
         "ocelot/frontend": "dev-master"
     },
     "require-dev": {
-        "facade/ignition": "^2.3.6",
-        "fzaninotto/faker": "^1.9.1",
-        "mockery/mockery": "^1.3.1",
-        "nunomaduro/collision": "^5.0",
-        "phpunit/phpunit": "^9.3"
-    },
-    "config": {
-        "optimize-autoloader": true,
-        "preferred-install": "dist",
-        "sort-packages": true
-    },
-    "extra": {
-        "laravel": {
-            "dont-discover": []
-        }
+        "fakerphp/faker": "^1.9.1",
+        "laravel/pint": "^1.0",
+        "mockery/mockery": "^1.4.4",
+        "nunomaduro/collision": "^6.1",
+        "phpunit/phpunit": "^9.5.10",
+        "spatie/laravel-ignition": "^1.0"
     },
     "autoload": {
         "psr-4": {
@@ -41,31 +40,44 @@
             "Tests\\": "tests/"
         }
     },
-    "minimum-stability": "dev",
-    "prefer-stable": true,
     "scripts": {
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
             "@php artisan package:discover --ansi"
+        ],
+        "post-update-cmd": [
+            "@php artisan ocelot:post-composer-update"
         ],
         "post-root-package-install": [
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
         ],
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi"
-        ],
-        "post-update-cmd": [
-            "@php artisan ocelot:post-composer-update"
         ]
     },
+    "extra": {
+        "laravel": {
+            "dont-discover": []
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "repositories": [
         {
             "type": "path",
-            "url": "/shared/httpd/packages/ocelot/core"
+            "url": "../packages/ocelot/core"
         },
         {
             "type": "path",
-            "url": "/shared/httpd/packages/ocelot/frontend"
+            "url": "../packages/ocelot/frontend"
         }
     ]
 }

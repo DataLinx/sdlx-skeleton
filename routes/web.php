@@ -13,6 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// TODO Check if needed - maybe the middleware handles this
 Route::get('/', function () {
-    return view('core::welcome');
+    if ( ! auth()->check()) {
+        return redirect('dashboard');
+    } else {
+        return redirect('login');
+    }
 });
