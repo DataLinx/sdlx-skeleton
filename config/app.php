@@ -193,8 +193,8 @@ return [
         Ocelot\Core\Providers\AuthServiceProvider::class,
         // Ocelot\Core\Providers\BroadcastServiceProvider::class,
         Ocelot\Core\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
-        App\Providers\TelescopeServiceProvider::class,
+        Ocelot\Core\Providers\RouteServiceProvider::class,
+        Ocelot\Core\Providers\TelescopeServiceProvider::class,
 
     ],
 
