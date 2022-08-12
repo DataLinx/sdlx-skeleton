@@ -12,12 +12,3 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-// TODO Check if needed - maybe the middleware handles this
-Route::get('/', function () {
-    if ( ! auth()->check()) {
-        return redirect('dashboard');
-    } else {
-        return redirect('login');
-    }
-});
