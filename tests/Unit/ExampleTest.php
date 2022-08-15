@@ -2,9 +2,9 @@
 
 namespace Tests\Unit;
 
-use PHPUnit\Framework\TestCase;
+use Ocelot\Core\Foundation\Testing\AppTestCase;
 
-class ExampleTest extends TestCase
+class ExampleTest extends AppTestCase
 {
     /**
      * A basic test example.

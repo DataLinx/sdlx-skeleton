@@ -2,7 +2,7 @@
 
 namespace Tests\Feature;
 
-use Ocelot\Core\Testing\AppTestCase;
+use Ocelot\Core\Foundation\Testing\AppTestCase;
 
 class ExampleTest extends AppTestCase
 {
