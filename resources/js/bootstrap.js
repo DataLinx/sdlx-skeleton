@@ -1,2 +1,2 @@
-// import _ from 'lodash';
-// window._ = _;
+// Import core bootstrap file
+import '../../vendor/ocelot/core/resources/js/core';
