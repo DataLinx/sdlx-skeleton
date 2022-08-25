@@ -190,11 +190,6 @@ return [
          * Application Service Providers...
          */
         App\Providers\AppServiceProvider::class,
-        SDLX\Core\Providers\AuthServiceProvider::class,
-        // SDLX\Core\Providers\BroadcastServiceProvider::class,
-        SDLX\Core\Providers\EventServiceProvider::class,
-        SDLX\Core\Providers\RouteServiceProvider::class,
-        SDLX\Core\Providers\TelescopeServiceProvider::class,
 
     ],
 
