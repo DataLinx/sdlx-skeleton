@@ -60,8 +60,8 @@ return [
     */
 
     'middleware' => [
-        'verify_csrf_token' => Ocelot\Core\Http\Middleware\VerifyCsrfToken::class,
-        'encrypt_cookies' => Ocelot\Core\Http\Middleware\EncryptCookies::class,
+        'verify_csrf_token' => SDLX\Core\Http\Middleware\VerifyCsrfToken::class,
+        'encrypt_cookies' => SDLX\Core\Http\Middleware\EncryptCookies::class,
     ],
 
 ];

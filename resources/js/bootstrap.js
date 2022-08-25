@@ -1,2 +1,2 @@
 // Import core bootstrap file
-import '../../vendor/ocelot/core/resources/js/core';
+import '../../vendor/sdlx/core/resources/js/core';

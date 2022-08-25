@@ -1,9 +1,9 @@
 {
-    "name": "ocelot/skeleton",
+    "name": "sdlx/skeleton",
     "type": "project",
-    "description": "The Ocelot project base",
+    "description": "The SDLX project base",
     "keywords": [
-        "ocelot",
+        "sdlx",
         "laravel"
     ],
     "license": "MIT",
@@ -17,8 +17,8 @@
         "php": "^8.0.2",
         "ext-gettext": "*",
         "ext-json": "*",
-        "ocelot/core": "dev-master",
-        "ocelot/frontend": "dev-master"
+        "sdlx/core": "dev-master",
+        "sdlx/frontend": "dev-master"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
@@ -46,7 +46,7 @@
             "@php artisan package:discover --ansi"
         ],
         "post-update-cmd": [
-            "@php artisan ocelot:post-composer-update"
+            "@php artisan sdlx:post-composer-update"
         ],
         "post-root-package-install": [
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
@@ -73,11 +73,11 @@
     "repositories": [
         {
             "type": "path",
-            "url": "../packages/ocelot/core"
+            "url": "../packages/sdlx/core"
         },
         {
             "type": "path",
-            "url": "../packages/ocelot/frontend"
+            "url": "../packages/sdlx/frontend"
         }
     ]
 }

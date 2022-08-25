@@ -7,7 +7,7 @@ export default defineConfig({
     plugins: [
         laravel({
             input: [
-                'vendor/ocelot/core/resources/js/core.js',
+                'vendor/sdlx/core/resources/js/core.js',
                 'resources/js/app.js',
             ],
             refresh: true,

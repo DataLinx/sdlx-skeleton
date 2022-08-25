@@ -2,7 +2,7 @@
 
 namespace Tests\Unit;
 
-use Ocelot\Core\Foundation\Testing\AppTestCase;
+use SDLX\Core\Foundation\Testing\AppTestCase;
 
 class ExampleTest extends AppTestCase
 {

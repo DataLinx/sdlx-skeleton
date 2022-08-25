@@ -62,7 +62,7 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => Ocelot\Core\Models\User::class,
+            'model' => SDLX\Core\Models\User::class,
         ],
 
         // 'users' => [

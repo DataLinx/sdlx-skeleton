@@ -15,7 +15,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Ocelot'),
+    'name' => env('APP_NAME', 'SDLX'),
 
     /*
     |--------------------------------------------------------------------------
@@ -190,11 +190,11 @@ return [
          * Application Service Providers...
          */
         App\Providers\AppServiceProvider::class,
-        Ocelot\Core\Providers\AuthServiceProvider::class,
-        // Ocelot\Core\Providers\BroadcastServiceProvider::class,
-        Ocelot\Core\Providers\EventServiceProvider::class,
-        Ocelot\Core\Providers\RouteServiceProvider::class,
-        Ocelot\Core\Providers\TelescopeServiceProvider::class,
+        SDLX\Core\Providers\AuthServiceProvider::class,
+        // SDLX\Core\Providers\BroadcastServiceProvider::class,
+        SDLX\Core\Providers\EventServiceProvider::class,
+        SDLX\Core\Providers\RouteServiceProvider::class,
+        SDLX\Core\Providers\TelescopeServiceProvider::class,
 
     ],
 
