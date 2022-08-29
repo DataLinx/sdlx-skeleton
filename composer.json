@@ -17,8 +17,7 @@
         "php": "^8.0.2",
         "ext-gettext": "*",
         "ext-json": "*",
-        "sdlx/core": "dev-master",
-        "sdlx/frontend": "dev-master"
+        "sdlx/core": "dev-master"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
@@ -72,12 +71,12 @@
     "prefer-stable": true,
     "repositories": [
         {
-            "type": "path",
-            "url": "../packages/sdlx/core"
+            "type": "vcs",
+            "url": "https://github.com/datalinx/sdlx-core"
         },
         {
-            "type": "path",
-            "url": "../packages/sdlx/frontend"
+            "type": "vcs",
+            "url": "https://github.com/datalinx/php-utils"
         }
     ]
 }
