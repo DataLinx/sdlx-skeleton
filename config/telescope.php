@@ -177,4 +177,17 @@ return [
         Watchers\ScheduleWatcher::class => env('TELESCOPE_SCHEDULE_WATCHER', true),
         Watchers\ViewWatcher::class => env('TELESCOPE_VIEW_WATCHER', true),
     ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Telescope authorizer users
+    |--------------------------------------------------------------------------
+    |
+    | In production, only users with these emails are allowed to view telescope.
+    |
+    */
+
+    'authorized_emails' => [
+
+    ],
 ];
