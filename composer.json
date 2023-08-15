@@ -72,7 +72,7 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/datalinx/sdlx-core"
+            "url": "https://github.com/datalinx/eclipse-core"
         }
     ]
 }

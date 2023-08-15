@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "dd76786ddb33d9b0458be2fd49eebbb3",
+    "content-hash": "e7d41a0a9ec130208718a5e2a0964cfa",
     "packages": [
         {
             "name": "brick/math",
@@ -818,12 +818,12 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/DataLinx/sdlx-core.git",
+                "url": "https://github.com/DataLinx/eclipse-core.git",
                 "reference": "175c6ae07698c222de01a4befb60e25defc077d5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/DataLinx/sdlx-core/zipball/175c6ae07698c222de01a4befb60e25defc077d5",
+                "url": "https://api.github.com/repos/DataLinx/eclipse-core/zipball/175c6ae07698c222de01a4befb60e25defc077d5",
                 "reference": "175c6ae07698c222de01a4befb60e25defc077d5",
                 "shasum": ""
             },
@@ -894,8 +894,8 @@
             ],
             "description": "Eclipse core package",
             "support": {
-                "source": "https://github.com/DataLinx/sdlx-core/tree/master",
-                "issues": "https://github.com/DataLinx/sdlx-core/issues"
+                "source": "https://github.com/DataLinx/eclipse-core/tree/master",
+                "issues": "https://github.com/DataLinx/eclipse-core/issues"
             },
             "time": "2023-08-14T14:32:30+00:00"
         },
