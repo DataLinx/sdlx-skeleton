@@ -62,7 +62,7 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => SDLX\Core\Models\User::class,
+            'model' => Eclipse\Core\Models\User::class,
         ],
 
         // 'users' => [

@@ -2,7 +2,7 @@
 
 namespace Tests\Feature;
 
-use SDLX\Core\Foundation\Testing\AppTestCase;
+use Eclipse\Core\Foundation\Testing\AppTestCase;
 
 class ExampleTest extends AppTestCase
 {

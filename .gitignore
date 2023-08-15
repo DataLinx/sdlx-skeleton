@@ -12,9 +12,13 @@ Homestead.json
 Homestead.yaml
 auth.json
 npm-debug.log
+phpunit.xml
 yarn-error.log
 
 # IDE/Editor files
 nbproject
 .idea/workspace.xml
 .idea/vcs.xml
+
+# Local Lando configuration
+.lando.local.yml

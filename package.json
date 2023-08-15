@@ -6,6 +6,7 @@
         "preview": "vite preview"
     },
     "devDependencies": {
+        "@defstudio/vite-livewire-plugin": "^0.2.6",
         "@popperjs/core": "^2.11.6",
         "alpinejs": "^3.10.3",
         "autoprefixer": "^10.4.8",

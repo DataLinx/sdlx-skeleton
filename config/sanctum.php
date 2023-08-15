@@ -60,8 +60,8 @@ return [
     */
 
     'middleware' => [
-        'verify_csrf_token' => SDLX\Core\Http\Middleware\VerifyCsrfToken::class,
-        'encrypt_cookies' => SDLX\Core\Http\Middleware\EncryptCookies::class,
+        'verify_csrf_token' => Eclipse\Core\Http\Middleware\VerifyCsrfToken::class,
+        'encrypt_cookies' => Eclipse\Core\Http\Middleware\EncryptCookies::class,
     ],
 
 ];

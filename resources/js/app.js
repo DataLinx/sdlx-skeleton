@@ -1,7 +1,7 @@
 // --------------------------------------------------
 // Import core Javascript and CSS
 // --------------------------------------------------
-import '../../vendor/sdlx/core/resources/js/core';
+import '../../vendor/eclipse/core/resources/js/core';
 
 // --------------------------------------------------
 // Import application stylesheet

@@ -1,9 +1,9 @@
 {
-    "name": "sdlx/skeleton",
+    "name": "eclipse/skeleton",
     "type": "project",
-    "description": "The SDLX project base",
+    "description": "The Eclipse project base",
     "keywords": [
-        "sdlx",
+        "eclipse",
         "laravel"
     ],
     "license": "MIT",
@@ -17,7 +17,7 @@
         "php": "^8.0.2",
         "ext-gettext": "*",
         "ext-json": "*",
-        "sdlx/core": "dev-master"
+        "eclipse/core": "dev-master"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
@@ -45,7 +45,7 @@
             "@php artisan package:discover --ansi"
         ],
         "post-update-cmd": [
-            "@php artisan sdlx:post-composer-update"
+            "@php artisan eclipse:post-composer-update"
         ],
         "post-root-package-install": [
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
@@ -73,10 +73,6 @@
         {
             "type": "vcs",
             "url": "https://github.com/datalinx/sdlx-core"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/datalinx/php-utils"
         }
     ]
 }
