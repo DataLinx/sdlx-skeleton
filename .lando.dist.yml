@@ -2,11 +2,15 @@ name: eclipse-skeleton
 recipe: laravel
 config:
   webroot: public
-  php: '8.0'
+  php: '8.2'
   via: nginx
   database: mariadb:10.6
   xdebug: coverage
 services:
+  appserver:
+    type: php:custom
+    overrides:
+      image: slimdeluxe/php:8.2
   database:
     creds:
       database: eclipse
