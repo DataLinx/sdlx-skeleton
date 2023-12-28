@@ -32,3 +32,8 @@ proxy:
     - mail.eclipse-skeleton.lndo.site
   pma:
     - pma.eclipse-skeleton.lndo.site
+tooling:
+  test:
+    service: appserver
+    description: Run tests
+    cmd: "composer test"
