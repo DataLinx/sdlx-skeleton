@@ -1,11 +1,12 @@
 {
     "name": "eclipse/skeleton",
-    "type": "project",
     "description": "The Eclipse project base",
     "keywords": [
         "eclipse",
         "laravel"
     ],
+    "homepage": "https://github.com/datalinx/eclipse-skeleton",
+    "type": "project",
     "license": "MIT",
     "authors": [
         {
@@ -13,6 +14,28 @@
             "email": "info@datalinx.si"
         }
     ],
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Database\\Factories\\": "database/factories/",
+            "Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
     "require": {
         "php": "^8.2",
         "ext-gettext": "*",
@@ -27,19 +50,9 @@
         "phpunit/phpunit": "^10.1",
         "spatie/laravel-ignition": "^2.0"
     },
-    "autoload": {
-        "psr-4": {
-            "App\\": "app/",
-            "Database\\Factories\\": "database/factories/",
-            "Database\\Seeders\\": "database/seeders/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Tests\\": "tests/"
-        }
-    },
     "scripts": {
+        "format": "vendor/bin/pint",
+        "test": "vendor/bin/phpunit",
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
             "@php artisan package:discover --ansi"
@@ -59,16 +72,6 @@
             "dont-discover": []
         }
     },
-    "config": {
-        "optimize-autoloader": true,
-        "preferred-install": "dist",
-        "sort-packages": true,
-        "allow-plugins": {
-            "pestphp/pest-plugin": true
-        }
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true,
     "repositories": [
         {
             "type": "vcs",
