@@ -1,24 +1,17 @@
-/build
-/node_modules
-/public/build
-/public/hot
-/public/storage
-/storage/*.key
-/vendor
+# 1. Keep lines sorted alphabetically in this file
+# 2. Do not add OS or IDE specific lines here — do it in the global .gitignore: https://gist.github.com/subfuzion/db7f57fff2fb6998a16c
+# -----------------------
 .env
 .env.backup
-.phpunit.result.cache
-Homestead.json
-Homestead.yaml
-auth.json
-npm-debug.log
-phpunit.xml
-yarn-error.log
-
-# IDE/Editor files
-nbproject
-.idea/workspace.xml
-.idea/vcs.xml
-
-# Local Lando configuration
 .lando.local.yml
+.phpunit.result.cache
+.php-cs-fixer.cache
+build
+composer.lock
+node_modules
+phpunit.xml
+public/build
+public/hot
+public/storage
+storage/*.key
+vendor
