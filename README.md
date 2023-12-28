@@ -37,7 +37,7 @@ This package serves as a starting point and reference for all Eclipse-based PHP 
 ## Getting started
 1. Create a new project with composer:
     ```shell
-    composer create-project eclipse/skeleton
+    composer create-project eclipseapp/skeleton
     ````
 2. Run `npm install` in the directory.
 3. Run `lando start` and then `lando ssh` to enter into the container. 
