@@ -30,6 +30,7 @@ This package serves as a starting point and reference for all Eclipse-based PHP 
 * PHP >= 8.2
   * See the `require` section in [composer.json](composer.json) for required PHP extensions
 * MariaDB >= 10.6
+* Composer
 * For local development:
   * Node.js with npm
   * Although not obligatory, [Lando](https://lando.dev/) is recommended for setting up the Docker containers. All Eclipse packages already ship with a Lando config file. 
@@ -37,7 +38,7 @@ This package serves as a starting point and reference for all Eclipse-based PHP 
 ## Getting started
 1. Create a new project with composer:
     ```shell
-    composer create-project eclipseapp/skeleton
+    composer create-project eclipseapp/skeleton myprojectname -s dev
     ````
 2. Run `npm install` in the directory.
 3. Run `lando start` and then `lando ssh` to enter into the container. 
