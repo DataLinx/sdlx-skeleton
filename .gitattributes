@@ -13,7 +13,11 @@
 /.gitignore export-ignore
 /.lando.dist.yml export-ignore
 /.php-cs-fixer.dist.php export-ignore
+/CHANGELOG.md export-ignore
+/README.md export-ignore
 /commitlint.config.js export-ignore
-/package.json export-ignore
 /package-lock.json export-ignore
+/package.json export-ignore
 /phpunit.xml.dist export-ignore
+/postcss.config.js export-ignore
+/vite.config.js export-ignore
