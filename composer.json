@@ -40,7 +40,7 @@
         "php": "^8.2",
         "ext-gettext": "*",
         "ext-json": "*",
-        "eclipse/core": "dev-master"
+        "eclipseapp/core": "dev-master"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
