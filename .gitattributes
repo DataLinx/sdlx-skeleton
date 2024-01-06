@@ -16,8 +16,5 @@
 /CHANGELOG.md export-ignore
 /README.md export-ignore
 /commitlint.config.js export-ignore
-/package-lock.json export-ignore
-/package.json export-ignore
 /phpunit.xml.dist export-ignore
 /postcss.config.js export-ignore
-/vite.config.js export-ignore
