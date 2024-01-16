@@ -31,7 +31,11 @@ if (file_exists($maintenance = __DIR__.'/../storage/framework/maintenance.php'))
 |
 */
 
-require __DIR__.'/../vendor/autoload.php';
+if (defined('ECLIPSE_PACKAGE_DEV') AND ECLIPSE_PACKAGE_DEV) {
+    require '../../../../vendor/autoload.php';
+} else {
+    require __DIR__.'/../vendor/autoload.php';
+}
 
 /*
 |--------------------------------------------------------------------------

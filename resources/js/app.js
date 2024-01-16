@@ -1,7 +1,7 @@
 // --------------------------------------------------
-// Import core Javascript and CSS
+// Import module Javascript and CSS
 // --------------------------------------------------
-import '../../vendor/eclipseapp/core/resources/js/core';
+import '../../storage/app/imports.js';
 
 // --------------------------------------------------
 // Import application stylesheet
