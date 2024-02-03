@@ -1,20 +1,15 @@
 <?php
 
-namespace Tests\Feature;
+use Eclipse\Core\Models\User;
 
-use Eclipse\Core\Foundation\Testing\AppTestCase;
+test('example page requires login', function () {
+    $response = $this->get('/example');
 
-class ExampleTest extends AppTestCase
-{
-    /**
-     * A basic test example.
-     *
-     * @return void
-     */
-    public function test_the_application_returns_a_successful_response()
-    {
-        $response = $this->get('/');
+    $response->assertStatus(302);
+});
 
-        $response->assertStatus(302);
-    }
-}
+test('logged in user can access example page', function () {
+    $response = $this->actingAs(User::factory()->make())->get('/example');
+
+    $response->assertStatus(200);
+});

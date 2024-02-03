@@ -1,18 +1,6 @@
 <?php
 
-namespace Tests\Unit;
+test('true is true', function () {
 
-use Eclipse\Core\Foundation\Testing\AppTestCase;
-
-class ExampleTest extends AppTestCase
-{
-    /**
-     * A basic test example.
-     *
-     * @return void
-     */
-    public function test_that_true_is_true()
-    {
-        $this->assertTrue(true);
-    }
-}
+    expect(true)->toBe(true);
+});

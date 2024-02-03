@@ -10,3 +10,10 @@
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+
+use App\Http\Controllers\ExampleController;
+use Illuminate\Support\Facades\Route;
+
+Route::middleware('auth')->group(function () {
+    Route::get('/example', [ExampleController::class, 'show']);
+});
