@@ -43,6 +43,7 @@
         "eclipseapp/core": "dev-master"
     },
     "require-dev": {
+        "eclipseapp/module-template": "dev-master",
         "fakerphp/faker": "^1.9.1",
         "laravel/pint": "^1.13",
         "mockery/mockery": "^1.4.4",
