@@ -10,5 +10,12 @@
         <p>
             This is the example view in the skeleton app!
         </p>
+
+        <p class="mt-5">Here's a Livewire component from the skeleton.</p>
+        <livewire:counter/>
+
+        <p class="mt-5">And here's a Livewire component from the module template:</p>
+        <livewire:my-counter/>
+
     </div>
 </x-app-layout>
