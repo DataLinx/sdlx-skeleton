@@ -28,11 +28,6 @@ export default ({ mode }) => {
             }),
             // livewire({}),
         ],
-        resolve: {
-            alias: {
-                '~bootstrap': resolve(work_dir, 'node_modules/bootstrap'),
-            },
-        },
         build: {
             sourcemap: true,
         },
